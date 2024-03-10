@@ -7,7 +7,7 @@ export default function CardAxios({handleClick}) {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios.get('https://fakestoreapi.com/products');
-      .then(res => setProducts(res.data))
+      .then(res => setProducts(res.data));
   }, [])
 
  
