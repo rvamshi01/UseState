@@ -16,7 +16,7 @@ export default function CardAxios({handleClick}) {
     <>
     <input type="text" placeholder='productname'  className="setside" onChange={(e)=>setSearch(e.target.value)} value={search}/>
     <div className="container mt-4">
-      <h2>Products Data</h2>
+      <h2>Product Data</h2>
       <div className="row">
         {products.filter((productdetails)=>productdetails.title.toLowerCase().includes(search.toLowerCase())).map(product => (
           <div className="col-md-4 mb-4">
