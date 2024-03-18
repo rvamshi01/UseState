@@ -8,7 +8,7 @@ export default function CardAxios({handleClick}) {
   useEffect(() => {
     axios.get('https://fakestoreapi.com/products');
       .then(res => setProducts(res.data))
-  }, [])
+  }, []);
 
  
   
