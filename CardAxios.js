@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function CardAxios({handleClick}) {
   const[search, setSearch]=useState('');
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([]);
   useEffect(() => {
     axios.get('https://fakestoreapi.com/products')
       .then(res => setProducts(res.data))
