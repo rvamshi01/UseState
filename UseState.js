@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function UseState() {
     const [name , setName]= useState('Vamshi')
     const change=()=>{
-      setName("vamshiiiiiiiiii")
+      setName("vamshiiiiiiiiii");
     }
    
   return (
